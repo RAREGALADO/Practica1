@@ -1,0 +1,63 @@
+@page "/Vehiculo/"
+@using Vehiculo1604.Data.models;
+
+<pagetitle > Registro de Vehiculo</pagetitle>
+<h1>Registro de Vehiculo</h1>
+ <input @bind="Registro.VehiculoID">
+ <input @bind="Registro.Marca">
+ <input @bind="Registro.Modelo">
+ <input @bind="Registro.Año">
+ <input @bind="Registro.Color"> 
+
+<button class="btn @(Registro.VehiculoID) btn-primary" >Enviar</button>
+
+<table clas="table">
+       <thead>
+           <tr>
+             <th>Vehiculo</th>
+             <th>Marca</th>
+             <th>Modelo</th>
+             <th>Año</th>
+             <th>Color</th>
+             </tr>
+       </thead>
+       <tbody>
+        
+        @foreach(var Vehiculo in (Vehiculo))
+        {
+            <tr>
+               <td>@Vehiculo.VehiculoID</td>
+               <td>@Vehiculo.Marca</td>
+               <td>@Vehiculo.Modelo</td>
+               <td>@Vehiculo.Año</td>
+               <td>@Vehiculo.Color</td>
+            </tr>
+        }
+    </tbody>
+  </table>
+  @code{ 
+    public Vehiculo Registro {get; set;}=new Vehiculo();
+    public List<Vehiculo> Vehiculo {get; set;} 
+      =new  List<Vehiculo>(){
+
+        };
+      
+}; 
+
+ void Guardar()
+ {
+  if (!string.isnumllorEmpty(Registro.VehiculoID))
+  
+    {
+      Vehiculo!.add(Registro);
+      var indice= Vehiculo! FindIndex(p=>.VehiculoID == Registro.VehiculoID);
+      Vehiculo![indice]= Registro;
+      Registro= new Vehiculo();
+    }
+ }
+
+   
+
+
+
+

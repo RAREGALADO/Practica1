@@ -1,0 +1,8 @@
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.csproj.AssemblyReference.cache
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.GeneratedMSBuildEditorConfig.editorconfig
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.AssemblyInfoInputs.cache
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.AssemblyInfo.cs
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.csproj.CoreCompileInputs.cache
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.MvcApplicationPartsAssemblyInfo.cache
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.RazorAssemblyInfo.cache
+C:\2017-1604\Vehiculo1604\obj\Debug\net6.0\Vehiculo1604.RazorAssemblyInfo.cs
